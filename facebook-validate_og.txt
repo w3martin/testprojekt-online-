@@ -1,0 +1,23 @@
+[useragent = facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)]
+page.headerData.15 = HTML
+page.headerData.15.value (
+      <meta property="og:title" content="The title of your page" />
+      <meta property="og:site_name" content="The name of your web site" />
+      <meta property="og:image" content="The URL of the best picture for this page" />
+)
+[global]
+
+
+
+oder html
+
+
+
+<head>
+     <?php
+     if($_SERVER['HTTP_USER_AGENT'] == 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)') { ?>
+          <meta property="og:title" content="The title of your page" />
+          <meta property="og:site_name" content="The name of your web site" />
+          <meta property="og:image" content="The URL of the best picture for this page" />
+     <?php } ?>
+</head>
